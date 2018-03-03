@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bootstrap, File Input Box</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {
+	padding-top: 60px;
+}
+</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="alert alert-info">
+			<div ng-app="myApp" ng-controller="SiteFileUploadCtrl">
+				<input type="file" file-model="myFile" style="width:17%"/>
+				<button ng-click="uploadFile()">Upload</button>
+			</div>
+		</div>
+
+
+
+		<div class="alert alert-warning">
+			Please use CSV<em>file</em> format
+		</div>
+	</div>
+	<script src="js/jquery_1.9.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+	<script type="text/javascript" src="js/siteConfig.js"></script>
+	
+</body>
+</html>
